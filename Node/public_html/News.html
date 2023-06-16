@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./main.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <title>5.3</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <!--Navbar is fixed so navbar controls are always accessible-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bd-red-600 ">
+    <a class="navbar-brand" href="./index.html">
+      <!--Navbar has a blue buttery icon to match with website theme-->
+      <img
+        src="data:image/png;base64,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">
+    </a>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" style="padding-right: 20px;">
+          <a class="navbar-brand active" href="./Sport.html">Sport</a>
+        </li>
+        <li class="nav-item" style="padding-right: 20px;">
+          <a class="navbar-brand" href="./News.html">News</a>
+        </li>
+        <li class="nav-item" style="padding-right: 20px;">
+          <a class="navbar-brand" href="./Worklife.html">Worklife</a>
+        </li>
+        <li class="nav-item" style="padding-right: 20px;">
+          <a class="navbar-brand" href="./Travel.html">Travel</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <div class="input-group col-sm">
+          <div class="input-group-text"><span class="material-symbols-outlined">search</span></div>
+          <input class=" me-2" type="text" placeholder="Search" aria-label="Search">
+        </div>
+        <button class="btn btn-light" type="button">Search</button>
+        <button class="btn btn-light  ">
+          <a href="./signin.html"><span class="material-symbols-outlined">person</span></a>
+        </button>
+      </form>
+
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row mt-5 mt-sm-5">
+      <div class="col-12 mt-5 mt-sm-0">
+        <div class="card text-bg-dark mt-5 mt-sm-0">
+          <img src="./SportsHeadline1.jpg" class="card-img" alt="..." style="height: 500px;">
+          <div class="card-img-overlay">
+            <h5 class="card-title mt-5 mt-sm-0">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content.
+              This content is a little bit longer.</p>
+            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-6 mt-5 mt-sm-2">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./headline1.png" class="img-fluid rounded-start" onmouseover="CallCreditsFunctionhere">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">King Charles Coronation</h5>
+                <p class="card-text">The King was coronated at the age of 75.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 col-sm-6 mt-5 mt-sm-2">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./headline1.png" class="img-fluid rounded-start" onmouseover="CallCreditsFunctionhere">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">King Charles Coronation</h5>
+                <p class="card-text">The King was coronated at the age of 75.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+<footer>
+  <div class="container ">
+    2023 dKin News</div>
+</footer>
+
+</html>
