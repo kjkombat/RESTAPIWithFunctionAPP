@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\AzureFunction",
+    "\\Node\\public_html",
+    "\\Node\\views"
   ],
+  "SelectedNode": "\\AzureFunction",
   "PreviewInSolutionExplorer": false
 }

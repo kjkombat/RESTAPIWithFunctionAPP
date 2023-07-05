@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "GetNews": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7245",
+      "launchBrowser": false
+    }
+  }
+}
